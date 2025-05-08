@@ -1,0 +1,158 @@
+:root {
+    --navy: #222E5E;
+    --orange: #FF8C00;
+  }
+  
+  /* body { background-color: var(--blue); } */
+
+img{
+    max-width: 100%;
+}
+body{
+    background: #EDF2F9;
+    font-family: 'Titillium Web', sans-serif;
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-size: 18px;
+    color: var(--navy);
+}
+.box-login{
+    background: var(--navy);
+    padding: 25px;
+    border-radius: 6px;
+    margin-top: 25px;
+    color: var(--orange);
+}
+.btn-primary{
+    background-color: var(--orange);
+    border-color: #fff;
+}
+.btn-primary:hover, .btn-primary:active{
+    background-color: #e37e02 !important;
+    border-color: white;
+}
+.btn{
+    /* text-transform: uppercase; */
+    /* font-weight: bold; */
+    letter-spacing: 1px;
+}
+video, .cam-exam {
+    width: 320px;
+    height: 240px;
+    /* border: 1px solid #ddd; */
+}
+.cam-exam{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 200px;
+    height: 200px;
+}
+.exam-timer{
+    /*background: var(--orange);*/
+    background: var(--navy);
+    color: var(--orange);
+    /*color: var(--navy);*/
+    padding: 12px 0;
+    font-size: 25px;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+}
+.ready-test {
+    display: none; /* Hide ready-test section initially */
+}
+.main-content{
+    /* border: 1px solid #ccc; */
+    border-radius: 10px;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0 7px 14px 0 rgba(65, 69, 88, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.07);
+}
+.exam-area .main-content{
+    padding-right: 60px;
+}
+.form-group{
+    margin-bottom: 25px;
+}
+.branding{
+    max-width: 300px;
+    margin-top: 25px;
+}
+.mt-25px{
+    margin-top: 25px;
+}
+.number-b{
+    background-color: var(--navy);
+    display: inline-block;
+    margin-right: 10px;
+    color: white;
+    height: 35px;
+    line-height: 35px;
+    width: 35px;
+    text-align: center;
+    border-radius: 35px;
+}
+hr {
+    border: 1px dashed;
+    border-color: #000; /* Optional, sets the color */
+}
+.ttl-score{
+    text-align: center;
+    font-size: 18px;
+    background: #EDF2F9;
+    padding: 35px;
+    border-radius: 10px;
+}
+.ttl-score span{
+    display: inline-block;
+    font-size: 45px;
+    font-weight: bold;
+}
+.section-exam{
+    background: #ebebeb;
+    padding: 25px 45px;
+    border-radius: 10px;
+    max-width: 1000px;
+}
+.container{
+    max-width: 1000px;
+}
+.form-check-input{
+    border-color: #333;
+}
+u{
+    font-weight: bold;
+}
+.copyr{
+    font-size: 14px;
+}
+#userTable,
+#examResultsTable{
+    font-size: 14px;
+}
+.small-score{
+    font-size: 14px;
+    text-align: center;
+    background: #EDF2F9;
+    padding: 25px;
+    height: 133px;
+    border-radius: 10px;
+}
+.small-score h4{
+    font-size: 30px;
+}
+.lc{
+    background: #E0F7FA;
+}
+.we{
+    background: #FFEBEE;
+}
+.rc{
+    background: #F1F8E9;
+}
+.ttl-q{
+    font-size: 14px;
+}

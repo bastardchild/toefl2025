@@ -1,0 +1,4 @@
+[04-Oct-2024 06:37:38 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Capsule\Manager" not found in /home/pusatb19/public_html/toefl.pusatbahasaunmer.com/config/database.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/pusatb19/public_html/toefl.pusatbahasaunmer.com/config/database.php on line 4

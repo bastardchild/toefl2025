@@ -1,0 +1,3 @@
+# Deny access to the config directory
+Order Allow,Deny
+Deny from all

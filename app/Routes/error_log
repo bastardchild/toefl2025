@@ -1,0 +1,5 @@
+[06-Oct-2024 07:36:01 UTC] PHP Warning:  Undefined variable $app in /home/pusatb19/public_html/toefl.pusatbahasaunmer.com/app/Routes/CompleteRoute.php on line 10
+[06-Oct-2024 07:36:01 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get() on null in /home/pusatb19/public_html/toefl.pusatbahasaunmer.com/app/Routes/CompleteRoute.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/pusatb19/public_html/toefl.pusatbahasaunmer.com/app/Routes/CompleteRoute.php on line 10
