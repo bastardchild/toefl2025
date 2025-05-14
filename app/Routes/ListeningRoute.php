@@ -2,6 +2,8 @@
 use Slim\Psr7\Request;
 use Slim\Psr7\Response;
 use App\Models\ExamResult;
+use App\Models\User;
+
 
 $app->get('/listening', function (Request $request, Response $response, array $args) {
     if (!isset($_SESSION['user_id']) || $_SESSION['current_section'] !== 'listening') {
@@ -25,6 +27,17 @@ $app->post('/listening', function (Request $request, Response $response, array $
             ->withStatus(302);
     }
 
+    // Check if reset_required is 1
+    $userId = $_SESSION['user_id'];
+    $user = new User(); // Assuming you have a User model
+    $userData = $user->find($userId);
+    
+    if ($userData && $userData->reset_required == 1) {
+        return $response
+            ->withHeader('Location', '/dashboard')
+            ->withStatus(302);
+    }
+
     $examId = $_SESSION['exam_id'];
 
     if (!$examId) {
@@ -42,7 +55,6 @@ $app->post('/listening', function (Request $request, Response $response, array $
         }
     }
 
-    $userId = $_SESSION['user_id'];
     $db = new ExamResult();
     $examResult = $db->where('user_id', $userId)->where('exam_id', $examId)->first();
 
@@ -97,8 +109,4 @@ $app->post('/listening', function (Request $request, Response $response, array $
     ");
 
     return $response;
-
-    // return $response
-    //     ->withHeader('Location', '/writing')
-    //     ->withStatus(302);
 });

@@ -9,5 +9,5 @@ class User extends Model
     public $timestamps = false;
 
     // Allow these fields to be mass assignable
-    protected $fillable = ['name', 'middle_name', 'last_name', 'role_id', 'username', 'password', 'cam_image', 'exam_code'];
+    protected $fillable = ['name', 'middle_name', 'last_name', 'role_id', 'username', 'password', 'cam_image', 'exam_code', 'reset_required'];
 }
